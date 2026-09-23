@@ -94,6 +94,14 @@ Rules to enforce, gently but every time:
 - **If a new file or folder does not fit this structure,** explain why it belongs there before creating it.
 - **Use the repo’s actual artifacts as the guide.** This project includes the notebook, the data folders, the license, the requirements file, and the GitHub configuration, so new additions should match that pattern when possible.
 
+## Repo-specific guidance for this lab
+
+- The active project artifact is the notebook in `LABS-04_Systems.ipynb`; keep analysis work there unless code is reused elsewhere.
+- This repo is a Python data-science environment. Use the project interpreter or a local `.venv` and install dependencies with `pip install -r requirements.txt` before running notebook cells.
+- Prefer the repo’s actual documentation in `README.md` and the pinned package list in `requirements.txt` over ad hoc assumptions.
+- Keep raw inputs immutable and place cleaned outputs under `data/processed/` so the lab remains reproducible.
+- Verify changes with a focused Python check or notebook cell instead of large, untested edits.
+
 ---
 
 ## When something breaks
